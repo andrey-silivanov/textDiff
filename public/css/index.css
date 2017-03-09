@@ -1,0 +1,33 @@
+[v-cloak]
+{ display: none }
+
+.content {
+    padding-top: 50px;
+}
+textarea {
+    width: 100%;
+}
+.button-block {
+    text-align: center;
+    padding-top: 50px;
+}
+.change {
+    background: #ffbb00;
+}
+.new {
+    background: #10a031;
+}
+.delete {
+    background: #db0606;
+}
+
+.change:hover::before {
+    content: attr(data-hover);
+    background: #ffe;
+    padding: 5px;
+    z-index: 5;
+    display: inline;
+    border: 1px solid #666;
+    position: absolute;
+}
+
